@@ -24,4 +24,4 @@ def data():
     }
     return jsonify(response)
 
-app.run(host='0.0.0.0')
+app.run(host='0.0.0.0', port='5000')

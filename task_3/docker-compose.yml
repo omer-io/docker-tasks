@@ -2,9 +2,9 @@ services:
   server:
     build:
       dockerfile: Dockerfile.server
-    # container_name: myserver
-    # ports:
-    #   - "5000:5000"
+    container_name: myserver
+    ports:
+      - "5000:5000"
     networks:
       - mynetwork
     healthcheck:
@@ -16,7 +16,7 @@ services:
   client:
     build:
       dockerfile: Dockerfile.client
-    # container_name: myclient
+    container_name: myclient
     depends_on:
       server:
         condition: service_healthy

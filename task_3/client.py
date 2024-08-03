@@ -1,6 +1,7 @@
 import requests
 import time
 
+url = 'http://server:5000'
 def health_check():
     response = requests.get('http://server:5000/health')
     if response.status_code == 200:
