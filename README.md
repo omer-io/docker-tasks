@@ -5,7 +5,7 @@ This repo contains code files for 3 Docker tasks described below.
 ## Table of Contents
 -----------------
 
-* [Getting Started](#getting-started)
+* [Getting Started]
 * [Task 1](#task-1)
 * [Task 2](#task-2)
 * [Task 3](#task-3)
