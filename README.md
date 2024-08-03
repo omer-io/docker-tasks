@@ -1,4 +1,4 @@
-# Repository Name
+# Docker Tasks
 ================
 
 This repo contains code files for 3 Docker tasks described below.
@@ -18,6 +18,7 @@ To get started with this repository, simply clone it to your local machine:
 
 ```bash
 git clone git@github.com:omer-io/docker-tasks.git
+```
 
 ## Task 1
 ---------------
