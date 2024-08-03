@@ -54,7 +54,7 @@ git clone git@github.com:omer-io/docker-tasks.git
     - POST /ping to return a JSON response {"type": "pong", "time": "current_time"}.
     - POST /data to accept a JSON request {"jsonrpc": "2.0", "method": "message-1"} and respond with the original message with the current time {"jsonrpc": "2.0", "method": "message-1", “time”:"current_time"}.
 
-- **- Implement the Python client to:**
+- **Implement the Python client to:**
 
     - Perform a health check by sending a GET request to /health.
     - Send a POST request to /ping with JSON {"type": "ping"} and handle the response.
