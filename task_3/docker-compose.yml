@@ -1,0 +1,28 @@
+services:
+  server:
+    build:
+      dockerfile: Dockerfile.server
+    # container_name: myserver
+    # ports:
+    #   - "5000:5000"
+    networks:
+      - mynetwork
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:5000/health || exit 1"]
+      interval: 30s
+      timeout: 15s
+      retries: 5
+
+  client:
+    build:
+      dockerfile: Dockerfile.client
+    # container_name: myclient
+    depends_on:
+      server:
+        condition: service_healthy
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
