@@ -1,5 +1,4 @@
 # Docker Tasks
-================
 
 This repo contains code files for 3 Docker tasks described below.
 
